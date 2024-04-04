@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --green-teal: hsl(166, 100%, 37%);
+    --cobalt-blue: hsl(234, 85%, 45%);
+    --pale-blue: hsl(221, 100%, 96%);
+    --Light-lavender: hsl(241, 100%, 89%);
+    --dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+body {
+    font-family: "Hanken Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;   
+    justify-content: center;
+    align-content: center;
+}
+
+.result-container {
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    padding: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    text-align: center;
+}
+
+h1, p {
+    color: var(--Light-lavender);
+}
+
+h1, .stats-container h2 {
+    font-size: 1.1em;
+}
+
+.number-container span, .result-container h2 {
+    color: var(--pale-blue);
+}
+
+.number-container {
+    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    width: 150px;
+    height: 150px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 50%;
+}
+
+.number-container span {
+    font-size: 4em;
+    font-weight: bolder;
+}
+
+.result-container h2 {
+    padding-bottom: 20px;
+} 
+
+.stats-container {
+    margin: 20px 5vw;  
+}
+
+.stats-container h2 {
+    color: var(--dark-gray-blue);
+    margin-bottom: 20px;
+}
+
+.stats-container ul {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+    list-style: none;
+    padding: 0 20px;
+    margin-bottom: 20px;
+    line-height: 1;
+    border-radius: 10px;
+}
+
+li img {
+    margin-bottom: -5px;
+    padding-right: 10px;
+}
+
+.first, .second, .third, .fourth {
+    font-weight: bold;
+}
+
+.weight-normal {
+    font-weight: normal;
+}
+
+.result-stats {
+    color: hsl(224, 30%, 27%);
+}
+
+.first {
+    background-color: rgba(255, 87, 87, 0.075);
+}
+
+.first .result-title {
+    color: rgba(255, 87, 87);
+}
+
+.second {
+ background-color: hsla(39, 100%, 56%, 0.075);
+}
+
+.second .result-title {
+    color: hsla(39, 100%, 56%);
+}
+
+.third {
+    background-color: hsla(166, 100%, 37%, 0.075);
+}
+
+.third .result-title {
+    color: hsla(166, 100%, 37%);
+}
+
+.fourth {
+    background-color: hsla(234, 85%, 45%, 0.075);
+}
+
+.fourth .result-title {
+    color: hsla(234, 85%, 45%);
+}
+
+button {
+    background-color: hsl(224, 30%, 27%);
+    align-self: center;
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+    color: var(--pale-blue);
+    font-weight: bolder;
+    font-size: 15px;
+}
+
+button:hover {
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+@media screen and (min-width: 768px){
+
+    .container {
+        flex-direction: row;
+        width: 70vw;
+        margin: 10vw auto;
+    }
+
+    .result-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 25px;
+        width: 45%;
+        height: auto;
+        padding: 10px;
+        background-color: blue;
+    }
+
+    .stats-container {
+        box-shadow: 10px 10px 10px #f1f1f17a;
+        width: 50%;
+        padding: 30px;
+        margin: 0;
+        border-radius: 25px;
+        border-bottom-left-radius: 0;
+    }
+
+
+
+}
+
+/*
+## Gradients
+
+- Light slate blue (background): hsl(252, 100%, 67%)
+- Light royal blue (background): hsl(241, 81%, 54%)
+
+- Violet blue (circle): hsla(256, 72%, 46%, 1)
+- Persian blue (circle): hsla(241, 72%, 46%, 0)
+
+
+
+### Neutral
+
+- White: hsl(0, 0%, 100%)
+- Pale blue: hsl(221, 100%, 96%)
+- Light lavender: hsl(241, 100%, 89%)
+- Dark gray blue: hsl(224, 30%, 27%)
+
+### Notes
+
+Use transparency to get the color variations necessary to match the design. Hint: look into using `hsla()`.
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraphs): 18px
+
+### Font
+
+- Family: [Hanken Grotesk](https://fonts.google.com/specimen/Hanken+Grotesk)
+- Weights: 500, 700, 800
+
+> 💎 [Upgrade to Pro](https://www.frontendmentor.io/pro?ref=style-guide) for design file access to see all design details and get hands-on experience using a professional workflow with tools like Figma.
+*/
