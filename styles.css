@@ -46,11 +46,14 @@ h1, .stats-container h2 {
 
 .number-container {
     background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     margin: 20px auto;
     padding: 20px;
     border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .number-container span {
@@ -58,8 +61,13 @@ h1, .stats-container h2 {
     font-weight: bolder;
 }
 
+.info-container {
+    padding: 10px 30px 30px 30px;
+}
+
 .result-container h2 {
-    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 10px;
 } 
 
 .stats-container {
@@ -155,7 +163,7 @@ button:hover {
     background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 968px){
 
     .container {
         flex-direction: row;
@@ -168,7 +176,7 @@ button:hover {
         flex-direction: column;
         justify-content: center;
         border-radius: 25px;
-        width: 45%;
+        width: 400px;
         height: auto;
         padding: 10px;
         background-color: blue;
@@ -176,12 +184,13 @@ button:hover {
 
     .stats-container {
         box-shadow: 10px 10px 10px #f1f1f17a;
-        width: 50%;
+        width: 40%;
         padding: 30px;
         margin: 0;
         border-radius: 25px;
         border-bottom-left-radius: 0;
     }
+
 
 
 
